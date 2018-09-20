@@ -123,7 +123,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = "NIFTY Corporation";
+				ORGANIZATIONNAME = "FUJITSU CLOUD TECHNOLOGIES LIMITED";
 				TargetAttributes = {
 					BD982A451D5AC23F00141457 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -335,7 +335,7 @@
 				INFOPLIST_FILE = SwiftMapApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobilebackend.niftycloud.SwiftMapApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobilebackend.nifcloud.SwiftMapApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -351,7 +351,7 @@
 				INFOPLIST_FILE = SwiftMapApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobilebackend.niftycloud.SwiftMapApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobilebackend.nifcloud.SwiftMapApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

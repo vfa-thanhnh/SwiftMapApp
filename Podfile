@@ -4,7 +4,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'SwiftMapApp' do
-    pod 'NCMB', :git => 'https://github.com/NIFTYCloud-mbaas/ncmb_ios.git'
-    pod 'GoogleMaps'
+    pod 'NCMB', :git => 'https://github.com/NIFCloud-mbaas/ncmb_ios.git'
+    pod 'GoogleMaps' , '~> 2.1.1'
 end
 
