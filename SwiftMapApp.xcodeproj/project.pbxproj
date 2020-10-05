@@ -99,12 +99,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD982A581D5AC23F00141457 /* Build configuration list for PBXNativeTarget "SwiftMapApp" */;
 			buildPhases = (
+				0E7F5B1CFBC7A6D83464F609 /* [CP] Check Pods Manifest.lock */,
 				AAA7641AB3FFDC82D79BF3DF /* 📦 Check Pods Manifest.lock */,
 				BD982A421D5AC23F00141457 /* Sources */,
 				BD982A431D5AC23F00141457 /* Frameworks */,
 				BD982A441D5AC23F00141457 /* Resources */,
 				8267B9CD27200A0BD8A3A43C /* 📦 Embed Pods Frameworks */,
 				F6702A42B2A28A0983E35826 /* 📦 Copy Pods Resources */,
+				2F36AC5E9F996363FB191FE3 /* [CP] Embed Pods Frameworks */,
+				5422811F929FECF1A956797A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,6 +139,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -163,6 +167,64 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0E7F5B1CFBC7A6D83464F609 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftMapApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F36AC5E9F996363FB191FE3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftMapApp/Pods-SwiftMapApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/NCMB/NCMB.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NCMB.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftMapApp/Pods-SwiftMapApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5422811F929FECF1A956797A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftMapApp/Pods-SwiftMapApp-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftMapApp/Pods-SwiftMapApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8267B9CD27200A0BD8A3A43C /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -338,6 +400,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobilebackend.nifcloud.SwiftMapApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -354,6 +417,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobilebackend.nifcloud.SwiftMapApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
